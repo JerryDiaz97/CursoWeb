@@ -20,7 +20,8 @@
                     <input type="button" value = "Save" class = "btn btn-success" v-on:click = "addGrade">
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <h1>Lista de Calificaciones</h1>
+                    <h1 v-if = "list.length > 0 ">Lista de Calificaciones</h1>
+                    <h1 v-else = "list">No existen Calificaciones</h1>
                     <table class="table">
                         <tr>
                             <th>Nombre</th>
