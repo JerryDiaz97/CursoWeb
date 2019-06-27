@@ -17,7 +17,7 @@
                     <input type = "text" class = "form-control" v-model = "name">
                     <label>Promedio</label>
                     <input type = "text" max = "10" min = "0" class = "form-control" v-model = "average">
-                    <input type="button" value = "Save" class = "btn btn-success">
+                    <input type="button" value = "Save" class = "btn btn-success" v-on:click = "addGrade">
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <h1>Lista de Calificaciones</h1>
