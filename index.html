@@ -9,8 +9,35 @@
 </head>
 <body>
     <div id = "app">
-        <h1 v-text = "message"></h1>
-        <input type = "text" v-model = "message">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h1>Agregar Calificación</h1>
+
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h1>Lista de Calificaciones</h1>
+                    <table class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Promedio</th>
+                        </tr>
+                        <tr v-for = "item in list" v-bind:style = "item.status==false?'color:red':'color:green'">
+                            <td v-text = "item.name"></td>
+                            <td v-text = "item.average"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <p class="text-center">
+                        www.ExampleVuejs.com - @JerryDiaz97
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </div>
     
 </body>
