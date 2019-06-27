@@ -6,6 +6,8 @@ var app = new Vue({
             {name: "Airel Jaramillo", average: '6', status: false},
             {name: "Leisa Rubi", average: '6.5', status: true}
         ],
+        name: '',
+        average: ''
     }
     
 })
